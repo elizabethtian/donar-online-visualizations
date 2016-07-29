@@ -1,0 +1,27 @@
+h1 {
+	font-family: "Raleway", sans-serif;
+	text-align: center;
+	margin-bottom: 0;
+	font-size: 40px;
+}
+
+h2 {
+	font-family: "Goudy Bookletter 1911", sans-serif;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	font-size: 20px;
+}
+
+.overlay {
+  fill: none;
+  pointer-events: all;
+}
+.focus circle {
+  fill: none;
+  stroke: steelblue;
+}
+.focus2 circle {
+  fill: none;
+  stroke: red;
+}

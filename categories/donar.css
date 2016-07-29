@@ -1,0 +1,85 @@
+/* 
+ *  Donar Online Data Visualization
+ *
+ *  CSS for the data visualization of Donar Online category data from 2015. Uses packing
+ *  to map categories to circles, with the size based on donations.
+ *  Includes different views: quantity of donations, amount of donations (in Argentine pesos),
+ *  average donation amount per person, and male/female donation percentages.
+ *  
+ *  Created by Elizabeth Tian, 2016
+**/
+
+.description {
+  font: 10px sans-serif;
+  text-anchor: middle;
+  pointer-events: none;
+  display: block;
+}
+
+.title {
+  font-size: 20px;
+  font-family: 'Raleway', Helvetica, sans-serif;
+  font-weight: 600;
+  text-anchor: middle;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.info {
+  font-size: 15px;
+  font-family: 'Goudy Bookletter 1911', Georgia, sans-serif;
+  text-anchor: middle;
+  pointer-events: none;
+  margin: 0 auto;
+  opacity: 0;
+}
+
+.node:hover circle {
+	opacity: 0.8;
+	stroke: black;
+	stroke-width: 1px;
+}
+
+h1 {
+	font-size: 25px;
+	font-family: 'Poiret One', sans-serif;
+	text-align: center;
+	margin-bottom: 0;
+}
+h3 {
+	font-size: 18px;
+	font-family: 'Poiret One', sans-serif;
+	margin: 0 13em;
+	margin-top: 10px;
+	padding:0;
+}
+ul {
+	font-size: 15px;
+	font-family: 'Poiret One', sans-serif;
+	padding: 0;
+	margin-top: 0.5em;
+	margin-left: 15em;
+	margin-bottom: 0;
+	list-style: none;
+}
+
+li {
+	display: inline;
+	margin: 0 1em;
+	padding: 0;
+}
+
+#submenu {
+	margin-top: 1em;
+	margin-left: 20em;
+	margin-bottom: 0;
+	padding: 0;
+	opacity: 0;
+}
+
+ul li li {
+	display: inline block;
+	background-color: #202020;
+	border-radius: 4px;
+	padding: 5px;
+}

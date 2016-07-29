@@ -1,0 +1,49 @@
+<!--
+Donar Online Data Visualization
+
+HTML for the data visualization of Donar Online category data from 2015. 
+Uses packing to map categories to circles, with the size based on donations. 
+Includes different views: quantity of donations, amount of donations (in Argentine pesos),
+average donation amount per person, and male/female donation percentages.
+
+Created by Elizabeth Tian, 2016
+
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Donar Online Data Visualization</title>
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="donar.css" />
+
+</head>
+<body>
+
+<!-- Hello, World!
+<svg height="100" width="100">
+	<circle cx="50" cy="50" r="38" fill="blue" stroke="gray" stroke-width="10" />
+</svg> -->
+<h1>Donar Online: 2015 Categorias</h1>
+<h3>Vistas</h3>
+<ul>
+	<li id="cantidad">Cantidad</li>
+	<li id="monto">Monto</li>
+	<li id="pro">Promedio</li>
+	<li id="hm">Hombres/Mujeres
+		<ul id="submenu">
+			<li style="color: #bae1ff">Hombres</li>
+			<li style="color: #ffb3ba">Mujeres</li>
+			<li style="color: #fdfd96">Otros (No declarado)</li>
+		</ul>
+	</li>
+</ul>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script type="text/javascript" src="donar.js"></script>
+</body>
+</html>
