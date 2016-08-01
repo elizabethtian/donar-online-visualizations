@@ -13,7 +13,8 @@
 
 //data
 var dataset;
-var color = d3.scaleOrdinal(d3.schemeCategory20c);
+var color = d3.scaleOrdinal()
+    .range(["#EF3D3D", "#122B42", "#3D9AEF", "#4B4D4F", "#F5F5F5"]);
 
 //Width and height
 var w = 1250;
@@ -141,9 +142,16 @@ d3.csv("categories.csv", function(error, data) {
       	  .attr("r", d.r);
       });
 
+  document.getElementById("cantidad").style.color = "#3D9AEF";
+
   // Montos Packing
   d3.selectAll("li").filter("#monto")
       .on('click', function() {
+
+        document.getElementById("pro").style.color = "#000";
+        document.getElementById("monto").style.color = "#3D9AEF";
+        document.getElementById("cantidad").style.color = "#000";
+        document.getElementById("hm").style.color = "#000";
 
         //hide submenu
         d3.select("#submenu")
@@ -226,6 +234,11 @@ d3.csv("categories.csv", function(error, data) {
   d3.selectAll("li").filter("#pro")
       .on('click', function() {
 
+        document.getElementById("pro").style.color = "#3D9AEF";
+        document.getElementById("monto").style.color = "#000";
+        document.getElementById("cantidad").style.color = "#000";
+        document.getElementById("hm").style.color = "#000";
+
         //hide submenu
         d3.select("#submenu")
           .transition()
@@ -295,6 +308,11 @@ d3.csv("categories.csv", function(error, data) {
   // Cantidad Packing
   d3.selectAll("li").filter("#cantidad")
       .on('click', function() {
+
+        document.getElementById("pro").style.color = "#000";
+        document.getElementById("monto").style.color = "#000";
+        document.getElementById("cantidad").style.color = "#3D9AEF";
+        document.getElementById("hm").style.color = "#000";
 
         // hide submenu
         d3.select("#submenu")
@@ -371,6 +389,11 @@ d3.csv("categories.csv", function(error, data) {
   d3.selectAll("li").filter("#hm")
       .on('click', function() {
         
+        document.getElementById("pro").style.color = "#000";
+        document.getElementById("monto").style.color = "#000";
+        document.getElementById("cantidad").style.color = "#000";
+        document.getElementById("hm").style.color = "#3D9AEF";
+
         //show submenu
         d3.select("#submenu")
           .transition()
@@ -443,15 +466,15 @@ d3.csv("categories.csv", function(error, data) {
         
         node2.append("path")
           .attr("d", arcHombre)
-          .style("fill", "#bae1ff");
+          .style("fill", "#3D9AEF");
 
         node2.append("path")
           .attr("d", arcMujer)
-          .style("fill", "#ffb3ba");
+          .style("fill", "#EF3D3D");
 
         node2.append("path")
           .attr("d", arcOtro)
-          .style("fill", "#fdfd96");
+          .style("fill", "#122B42");
 
         node2.transition()
             .duration(2000)
