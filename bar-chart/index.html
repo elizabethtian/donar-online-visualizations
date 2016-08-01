@@ -11,26 +11,22 @@ Created by Elizabeth Tian, 2016
 <head>
 	<meta charset="utf-8">
 	<title>DO Bar Chart</title>
-	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 
 </head>
 <body>
 <h1>Donar Online</h1>
-<h2>Donaciónes Mensuales</h2>
-<form>
-  <label><input id="group" type="radio" name="mode" value="grouped"> Grouped</label>
+<h2>Donaciónes Mensuales 2013 - 2016</h2>
+<form id="type">
+  <label><input id="group" type="radio" name="mode" value="grouped">Grouped</label>
   <label><input type="radio" name="mode" value="stacked" checked> Stacked</label>
 </form>
-
 <form>
-  <label><input type="radio" name="mode" value="2013"> 2013</label>
-  <label><input type="radio" name="mode" value="2014"> 2014</label>
-  <label><input type="radio" name="mode" value="2015" checked> 2015</label>
-  <label><input type="radio" name="mode" value="2016"> 2016</label>
+  <label><input type="radio" name="mode" value="2013">2013</label>
+  <label><input type="radio" name="mode" value="2014">2014</label>
+  <label><input type="radio" name="mode" value="2015" checked>2015</label>
+  <label><input type="radio" name="mode" value="2016">2016</label>
 </form>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>

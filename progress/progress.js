@@ -35,7 +35,7 @@ var xScale = d3.scaleLinear()
 var yScale = d3.scaleLinear()
 	.range([height, 0]);
 var zScale = d3.scaleOrdinal()
-    .range(["#c2f1ff", "#ff87ab"]);
+    .range(["#3D9AEF", "#EF3D3D"]);
 var rScale = d3.scaleSqrt()
 	.range([5, 80]);
 
@@ -161,7 +161,7 @@ d3.csv("progress.csv", function(error, data) {
     focus.append("text")
         .attr("x", 7)
         .attr("font-size", "14px")
-        .attr("stroke", "steelblue")
+        .attr("stroke", "#122B42")
         .attr("dy", "-0.3em");
     focus2.append("text")
         .attr("x", 7)

@@ -41,7 +41,7 @@ var y = d3.scaleLinear()
 
 //color scale for stacks
 var z = d3.scaleOrdinal()
-    .range(["#98abc5", "#7b6888", "#8a89a6"]);
+    .range(["#3D9AEF", "#122B42", "#EF3D3D"]);
 
 //read in data
 d3.csv("bar.csv", function(error, data) {

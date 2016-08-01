@@ -127,11 +127,13 @@ $(function () {
     var map = $('#container').highcharts('Map', {
 
         title : {
-            text : 'Provincias y Donaciones'
+            text : 'Donar Online',
+            style: {"color":"#000", "font-size":"30px","font-family": "'FS Albert', Helvetica, sans-serif","font-weight":"bold"}
         },
 
         subtitle : {
-            text : 'Donar Online'
+            text : 'Provincias y Donaciones',
+            style: {"color":"#000", "font-size":"21px","font-family": "'Open Sans', Helvetica, sans-serif"}
         },
 
         credits : {
@@ -175,11 +177,10 @@ $(function () {
         		to: 10
         	} , {
         		from: 10,
-        		to: 100,
-        		color: '#660066'
+        		to: 100
         	}],
             min: 0,
-            maxColor: '#800080'
+            maxColor: '#3D9AEF'
         },
 
         series : [{
@@ -189,7 +190,7 @@ $(function () {
             name: 'Donaciones',
             states: {
                 hover: {
-                    color: '#f2e5f2'
+                    color: '#EF3D3D'
                 }
             },
             dataLabels: {
